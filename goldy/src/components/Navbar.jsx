@@ -8,14 +8,14 @@ function Nav() {
     <div>
       <nav className="bg-gold font-primary font-bold text-2xl">
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                {/* <img
-                  className="h-[20%] w-[20%]"
+                <img
+                  className="h-12 w-15"
                   src={Logo}
                   alt="Logo-Black"
-                /> */}
+                />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
