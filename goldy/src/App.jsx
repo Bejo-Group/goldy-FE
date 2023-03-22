@@ -1,6 +1,8 @@
 import DatePicker from './components/DatePicker'
+import LoadingBar from './components/LoadingBar'
 import Navbar from "./components/Navbar"
 import OutputHarga from './components/OutputHarga'
+import JualBeli from './components/RadioButton'
 import "./index.css"
 
 function App() {
@@ -8,9 +10,10 @@ function App() {
     <>
       <Navbar/>
       <div>
-        <h1 className="text-3xl font-bold underline text-gold">Hello world!</h1>
         <DatePicker></DatePicker>
         <OutputHarga></OutputHarga>
+        <JualBeli/>
+        <LoadingBar/>
       </div>
     </>
   );
