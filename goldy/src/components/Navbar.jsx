@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Logo from "../assets/LogoBlack.png"
+import Logo from "../assets/LogoBlack.png";
 import { Transition } from "@headlessui/react";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  
   return (
     <div>
       <nav className="bg-gold font-primary font-bold text-2xl">
@@ -11,30 +12,32 @@ function Nav() {
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-12 w-15"
-                  src={Logo}
-                  alt="Logo-Black"
-                />
+                <a href="/">
+                  <img
+                    className="h-12 w-15"
+                    src={Logo}
+                    alt="Logo-Black"
+                  />
+                </a>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#"
+                    href="/"
                     className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
                   >
                     Home
                   </a>
 
                   <a
-                    href="#"
+                    href="#features"
                     className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
                   >
                     Features
                   </a>
 
                   <a
-                    href="#"
+                    href="#about-us"
                     className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
                   >
                     About Us

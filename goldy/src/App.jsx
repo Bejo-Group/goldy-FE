@@ -1,6 +1,6 @@
 import DatePicker from './components/DatePicker'
-import Navbar from "./components/Navbar"
 import OutputHarga from './components/OutputHarga'
+import Navbar from "./components/Navbar"
 import "./index.css"
 
 function App() {
