@@ -1,4 +1,5 @@
 import DatePicker from './components/DatePicker'
+import Footer from './components/Footer'
 import LoadingBar from './components/LoadingBar'
 import Navbar from "./components/Navbar"
 import OutputHarga from './components/OutputHarga'
@@ -16,6 +17,7 @@ function App() {
         <OutputHarga></OutputHarga>
         <JualBeli/>
         <LoadingBar/>
+        <Footer/>
       </div>
     </>
   );
