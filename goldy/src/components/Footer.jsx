@@ -7,7 +7,7 @@ import Youtube from "../assets/yt.png";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 flex justify-center items-center bg-darkgray w-full h-[271px] text-white mt-auto">
+    <footer className="bottom-0 flex justify-center items-center bg-darkgray w-full h-[271px] text-white mt-auto">
       <div className="grid grid-cols-3 gap-36">
         <div>
           <img
@@ -16,7 +16,7 @@ export default function Footer() {
             alt="Logo"
           />
         </div>
-        <div>
+        <div className="text-center">
           <h1 className="font-bold text-h-md">Information</h1>
           <div className="m-5 text-h-sm">
             <h3>About Us</h3>
@@ -25,7 +25,7 @@ export default function Footer() {
           
         </div>
         <div>
-          <h1 className="font-bold text-h-md">Follow us</h1>
+          <h1 className="font-bold text-h-md text-center">Follow us</h1>
           <div className="grid grid-cols-4 gap-4 m-5">
             <img
               src={Instagram}
