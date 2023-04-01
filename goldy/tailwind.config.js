@@ -13,6 +13,9 @@ module.exports = {
         gold: "#E4B61A",
         white: "#FFFFFF",
       },
+      backgroundImage: {
+        'tips': "linear-gradient(to right, black, transparent), url('../public/Gold.png')",
+      },
     },
     fontSize: {
       "h-xl": ["3rem", "4.5rem"], // 48px
