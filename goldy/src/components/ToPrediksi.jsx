@@ -15,7 +15,7 @@ function ToPrediksi() {
             <p className='font-bold text-h-xl'>Prediksi</p>
             <p className='text-h-md'>Lakukan prediksi harga emas di waktu yang diinginkan.</p>
             {/* BUTTON FARHAN */}
-            <button>Coba di sini</button>
+            <button className='text-white bg-black px-5 py-1 mt-6 justify-center rounded-2xl hover:bg-darkgray hover:text-lightgray'>Coba di sini</button>
         </div>
     </div>
   )
