@@ -14,7 +14,6 @@ function ToRekomendasi() {
         <div>
             <p className='font-bold text-h-xl'>Rekomendasi</p>
             <p className='text-h-md'>Rekomendasi waktu yang tepat untuk melakukan investasi</p>
-            {/* BUTTON FARHAN */}
             <button className='text-white bg-black px-5 py-1 mt-6 justify-center rounded-2xl hover:bg-darkgray hover:text-lightgray'>Coba di sini</button>
         </div>
     </div>
