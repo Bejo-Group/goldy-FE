@@ -3,7 +3,7 @@ import Hero from '../assets/HeroImage.jpg'
 
 function Def() {
   return (
-    <div className='grid grid-cols-2 flex justify-center items-center mx-10'>
+    <div className='grid grid-cols-2 flex justify-center items-center mx-10 h-screen'>
         <div className='flex justify-center items-center'>
             <img
                 className="h-[444px]"
