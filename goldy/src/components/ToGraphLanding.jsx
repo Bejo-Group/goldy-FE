@@ -13,11 +13,15 @@ function ToGraphLanding () {
                 src={DummyGraph} 
                 alt="Dummy-Graph" 
                 />
-                <div>
-                    <p>Hellow World</p>
-                    <p>Hellow World</p>
-                    <p>Hellow World</p>
-                    <p>Hellow World</p>
+                <div className="px-4">
+                    <p>Harga Terakhir</p>
+                    <p>Rp1.049.000,00</p>
+                    
+                    <p>Perubahan</p>
+                    <p>Rp0.00</p>
+
+                    <p>Perubahan Terakhir</p>
+                    <p>12 Maret 2023 06:46:21</p>
                 </div>
             </div>
         </div>  
