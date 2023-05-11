@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import Prediksi from '../assets/Prediksi.png'
 
 function ToPrediksi() {
@@ -14,7 +15,9 @@ function ToPrediksi() {
         <div>
             <p className='font-bold text-h-xl'>Prediksi</p>
             <p className='text-h-md'>Lakukan prediksi harga emas di waktu yang diinginkan.</p>
-            <button className='text-white bg-black px-5 py-1 mt-6 justify-center rounded-2xl hover:bg-darkgray hover:text-lightgray'>Coba di sini</button>
+            <Link to="/prediksi">
+              <button className='text-white bg-black px-5 py-1 mt-6 justify-center rounded-2xl hover:bg-darkgray hover:text-lightgray'>Coba di sini</button>
+            </Link>
         </div>
     </div>
   )
