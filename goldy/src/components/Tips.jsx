@@ -10,11 +10,11 @@ function Tips(){
     return(
         <>
             <Navbar></Navbar>
-            <div className='grid grid-cols-1 flex justify-center items-center mx-28 mt-10'>
+            <div className='grid grid-cols-1 flex justify-center items-center mx-28 mt-10 md: flex-row md: justify-between'>
                 <h1 className='font-primary font-bold text-h-lg text-center '>Tips Investasi Emas</h1>
                 <p className='font-secondary text-center mt-3' >Emas tidak hanya populer sebagai perhiasan tapi juga dianggap sebagai pilihan investasi yang menguntungkan. Mengapa demikian? Sebab emas merupakan barang yang harganya cenderung naik serta jarang mengalami penurunan dalam jumlah yang signifikan. Berikut cara investasi emas yang aman.</p>
             </div>
-            <div className='flex justify-center items-center my-8 mx-28 grid grid-cols-4'>
+            <div className='flex justify-center items-center my-8 mx-28 grid lg:grid-cols-4 sm:grid-cols-1'>
                 {/* Tips no.1 */}
                 <div className='grid flex justify-center items-center'>
                     <img className="flex items-center h-[100px] w-[100px] my-4 mx-3" src={IconTag} alt="Tag"></img>
