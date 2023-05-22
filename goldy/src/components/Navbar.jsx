@@ -25,7 +25,7 @@ function Nav() {
                   <a
                     href="/"
                     className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
-                  > 
+                  >
                     Home
                   </a>
 
