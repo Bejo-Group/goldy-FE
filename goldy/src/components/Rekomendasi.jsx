@@ -6,13 +6,15 @@ import DummyGraph from './ToGraphLanding'
 function Rekomendasi(){
     return(
         <>
-            <Navbar/>
-            <DummyGraph/>
-            <div className='flex'>
-                <div>kiri</div>
-                <div>kanan</div>
+            <div className='flex flex-col h-screen'>
+                <Navbar/>
+                <DummyGraph/>
+                <div className='flex'>
+                    <div>kiri</div>
+                    <div>kanan</div>
+                </div>
+                <Footer/>   
             </div>
-            <Footer/>   
         </>
     )
 }
