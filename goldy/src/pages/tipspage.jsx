@@ -3,8 +3,10 @@ import Tips from "../components/Tips";
 
 const Tipspage = () => {
     return (
-        <>
-            <Tips/>
+        <>            
+            <div className='flex flex-col h-screen'>
+                <Tips/>
+            </div>
         </>
     );
 };
