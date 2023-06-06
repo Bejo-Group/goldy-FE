@@ -1,4 +1,6 @@
 import React from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
 import DummyGraph from './ToGraphLanding'
@@ -6,7 +8,6 @@ import { Link } from "react-router-dom";
 
 import { useState } from 'react';
 import axios from 'axios';
-import {toast} from 'react-toastify';
 
 function Prediksi(){
     const [StockMarket_SPX, setSPX] = useState(0);
@@ -45,6 +46,7 @@ function Prediksi(){
             <div className='flex flex-col h-screen'> 
                 <Navbar/>
                 <DummyGraph/>
+                <ToastContainer/>
                 <div className="row flex">
                     <div className="column flex-[50%]">
                         <div className='pl-60'>
@@ -117,6 +119,7 @@ function Prediksi(){
                         <label>{prediction}</label>
                     </div>
                 </div>
+
                 <Footer/>   
             </div>
         </>
