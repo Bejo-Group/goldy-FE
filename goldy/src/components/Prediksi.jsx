@@ -4,7 +4,42 @@ import Footer from './Footer'
 import DummyGraph from './ToGraphLanding'
 import { Link } from "react-router-dom";
 
+import { useState } from 'react';
+import axios from 'axios';
+import {toast} from 'react-toastify';
+
 function Prediksi(){
+    const [SPX, setSPX] = useState(0);
+    const[USO, setUSO]  = useState(0);
+    const[SLV, setSLV] = useState(0);
+    const[EUR_USD, setEUR_USD] = useState(0);
+    const [prediction, setPrediction] = useState();
+    const onSubmit = async () => {
+        if (SPX === "" || USO === "" || SLV === "" || EUR_USD === "") {
+            toast.error("All field must be filled!");
+            console.log("All field must be filled!")
+        } else {
+            axios.get("http://127.0.0.1:5000/prediction", {
+                params: {
+                    SPX: SPX,
+                    USO: USO,
+                    SLV: SLV,
+                    EUR_USD: EUR_USD,
+                },
+        })
+        .then((response) => {
+            if(response.status < 400) {
+                toast.success("Prediction Success!");
+                setPrediction(response.data.result)
+            }
+            console.log(response);
+        }) 
+        .catch((err) => {
+            console.log(err.response);
+        });
+        }
+    };
+
     return(
         <>
             <div className='flex flex-col h-screen'> 
