@@ -10,28 +10,23 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function Prediksi(){
-    const [StockMarket_SPX, setSPX] = useState(0);
-    const[StockMarket_USO, setUSO]  = useState(0);
-    const[StockMarket_SLV, setSLV] = useState(0);
-    const[StockMarket_EUR_USD, setEUR_USD] = useState(0);
+    const [input_Date, setDate] = useState(new Date());
     const [prediction, setPrediction] = useState();
+
     const onSubmit = async () => {
-        if (StockMarket_SPX === "" || StockMarket_USO === "" || StockMarket_SLV === "" || StockMarket_EUR_USD === "") {
+        if (input_Date === "") {
             toast.error("All field must be filled!");
             console.log("All field must be filled!")
         } else {
             axios.get("http://127.0.0.1:5000/prediction", {
                 params: {
-                    SPX: StockMarket_SPX,
-                    USO: StockMarket_USO,
-                    SLV: StockMarket_SLV,
-                    EUR_USD: StockMarket_EUR_USD,
+                    date: input_Date,
                 },
         })
         .then((response) => {
             if(response.status < 400) {
                 toast.success("Prediction Success!");
-                setPrediction(response.data.result)
+                setPrediction(response.data.predicted_price)
             }
             console.log(response);
         }) 
@@ -50,57 +45,18 @@ function Prediksi(){
                 <div className="row flex">
                     <div className="column flex-[50%]">
                         <div className='pl-60'>
-                            {/* SPX Section */}
+                            {/* Date Section */}
                             <div className='flex mt-10'>
-                                <div className='text-secondary text-h-md pr-5'>SPX :</div>   
+                                <div className='text-secondary text-h-md pr-5'>Date :</div>   
                                 <input 
                                 className="shadow appearance-none border rounded w-3/5 py-2 px-3 text-darkgray leading-tight focus:outline-none focus:shadow-outline" 
-                                placeholder="Masukkan nilai SPX"
-                                type="number"
+                                placeholder="Masukkan Tanggal"
+                                type="date"
                                 required
-                                value={StockMarket_SPX} 
-                                onChange={(event) => setSPX(event.target.value)}
+                                value={input_Date} 
+                                onChange={(event) => setDate(event.target.value)}
                                 />                                
-                            </div>
-
-                            {/* USO Section */}
-                            <div className='flex mt-10'>
-                                <div className='text-secondary text-h-md pr-5'>USO :</div>   
-                                <input 
-                                className="shadow appearance-none border rounded w-3/5 py-2 px-3 text-darkgray leading-tight focus:outline-none focus:shadow-outline" 
-                                placeholder="Masukkan nilai USO"
-                                type="number"
-                                required
-                                value={StockMarket_USO}
-                                onChange={(event) => setUSO(event.target.value)} 
-                                />                                
-                            </div>
-
-                            {/* SLV Section */}
-                            <div className='flex mt-10'>
-                                <div className='text-secondary text-h-md pr-5'>SLV :</div>   
-                                <input 
-                                className="shadow appearance-none border rounded w-3/5 py-2 px-3 text-darkgray leading-tight focus:outline-none focus:shadow-outline" 
-                                placeholder="Masukkan nilai SLV"
-                                type="number"
-                                required
-                                value={StockMarket_SLV} 
-                                onChange={(event) => setSLV(event.target.value)}
-                                />                                
-                            </div>
-
-                            {/* EUS_USD Section */}
-                            <div className='flex mt-10'>
-                                <div className='text-secondary text-h-md pr-5'>EUR/USD :</div>   
-                                <input 
-                                className="shadow appearance-none border rounded w-3/5 py-2 px-3 text-darkgray leading-tight focus:outline-none focus:shadow-outline" 
-                                placeholder="Masukkan nilai EUR/USD"
-                                type="number"
-                                required
-                                value={StockMarket_EUR_USD}
-                                onChange={(event) => setEUR_USD(event.target.value)} 
-                                />                                
-                            </div>
+                            </div>                           
 
                             <div>
                                 <Link to="">
