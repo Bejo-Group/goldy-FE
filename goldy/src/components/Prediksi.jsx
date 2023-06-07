@@ -6,6 +6,7 @@ import Footer from './Footer'
 import DummyGraph from './ToGraphLanding'
 import { Link } from "react-router-dom";
 import axios from 'axios';
+import MyCarousel from '../components/MyCarousel';
 
 function Prediksi() {
   //fetch to backend
@@ -38,6 +39,7 @@ function Prediksi() {
   return (
     <>
       <Navbar />
+      <MyCarousel></MyCarousel>
       <div className='flex flex-col min-h-screen'>
         <ToastContainer />
         <div className="row flex py-10">
