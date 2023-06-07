@@ -38,11 +38,11 @@ function Prediksi(){
 
     return(
         <>
-            <div className='flex flex-col h-screen'> 
-                <Navbar/>
+            <Navbar/>
+            <div className='flex flex-col min-h-screen'>                 
                 <DummyGraph/>
                 <ToastContainer/>
-                <div className="row flex">
+                <div className="row flex py-10">
                     <div className="column flex-[50%]">
                         <div className='pl-60'>
                             {/* Date Section */}
@@ -74,10 +74,9 @@ function Prediksi(){
                     <div className="result column flex-[50%] text-secondary text-h-md">
                         <label>{prediction}</label>
                     </div>
-                </div>
-
-                <Footer/>   
+                </div>                  
             </div>
+            <Footer/> 
         </>
     )
 }
