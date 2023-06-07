@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import DummyGraph from './ToGraphLanding'
 import { Link } from "react-router-dom";
+import MyCarousel from '../components/MyCarousel';
 
 import { useState } from 'react';
 import axios from 'axios';
@@ -39,6 +40,7 @@ function Rekomendasi(){
     return(
         <>
             <Navbar/>
+            <MyCarousel></MyCarousel>
             <div className='flex flex-col min-h-screen'>
                 <ToastContainer/>
                 <div className="row flex py-10">
