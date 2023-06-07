@@ -6,45 +6,39 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div>
-      <nav className="bg-gold font-primary font-bold text-h-sm w-full">
+    <div className="font-primary">
+      <nav className="bg-gold font-bold text-h-sm w-full">
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
-            <div className="flex items-center">
+            <div className="flex justify-between">
               <div className="flex-shrink-0">
                 <a href="/">
-                  <img
-                    className="h-12 w-15"
-                    src={Logo}
-                    alt="Logo-Black"
-                  />
+                  <img className="h-12 w-15" src={Logo} alt="Logo-Black" />
                 </a>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="/"
-                    className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
+                    className="text-white hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
                   >
                     Home
                   </a>
-
                   <a
-                    href="#features"
-                    className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
+                    href="/prediksi"
+                    className="text-white hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
                   >
-                    Features
+                    Prediksi
                   </a>
-
                   <a
-                    href="#about-us"
-                    className="text-darkgray hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
+                    href="/rekomendasi"
+                    className="text-white hover:text-black px-3 py-2 rounded-md hover:bg-yellow"
                   >
-                    About Us
+                    Rekomendasi
                   </a>
                 </div>
               </div>
-            </div>
+            </div>              
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -105,24 +99,24 @@ function Nav() {
             <div className="md:hidden text-2xl font-bold" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  href="/"
                   className="hover:bg-yellow hover:text-black text-darkgray block px-3 py-2 rounded-md"
                 >
                   Home
                 </a>
 
                 <a
-                  href="#"
+                  href="/prediksi"
                   className="hover:bg-yellow hover:text-black text-darkgray block px-3 py-2 rounded-md"
                 >
-                  Features
+                  Prediksi
                 </a>
 
                 <a
-                  href="#"
+                  href="/rekomendasi"
                   className="hover:bg-yellow hover:text-black text-darkgray block px-3 py-2 rounded-md"
                 >
-                  About Us
+                  Rekomendasi
                 </a>
               </div>
             </div>

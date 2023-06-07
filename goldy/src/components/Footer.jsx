@@ -17,32 +17,29 @@ export default function Footer() {
           />
         </div>
         <div className="text-center">
-          <h1 className="font-bold text-h-md">Information</h1>
+          <h1 className="font-bold text-h-md">© Bejo Group</h1>
           <div className="m-5 text-h-sm">
-            <h3>About Us</h3>
-            <h3>Contact</h3>
+            <h3>Farhan Maulana F</h3>
+            <h3>Ipung Sonia F</h3>
+            <h3>vallentina Wahyu F</h3>
           </div>
           
         </div>
         <div>
           <h1 className="font-bold text-h-md text-center">Follow us</h1>
           <div className="grid grid-cols-4 gap-4 m-5">
-            <img
-              src={Instagram}
-              alt="Instagram"
-            />
-            <img
-              src={Facebook}
-              alt="Facebook"
-            />
-            <img
-              src={Twitter}
-              alt="Twitter"
-            />
-            <img
-              src={Youtube}
-              alt="Youtube"
-            />
+            <a href="https://www.instagram.com">
+              <img src={Instagram} alt="Instagram" />
+            </a>
+            <a href="https://www.facebook.com">
+              <img src={Facebook} alt="Facebook"/>
+            </a>
+            <a href="https://www.twitter.com">
+              <img src={Twitter} alt="Twitter" />
+            </a>
+            <a href="https://www.youtube.com">
+              <img src={Youtube} alt="Youtube" />
+            </a>
           </div>
           
         </div>

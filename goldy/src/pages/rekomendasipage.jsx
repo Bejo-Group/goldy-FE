@@ -4,7 +4,9 @@ import Rekomendasi from "../components/Rekomendasi"
 const Rekomendasipage = () => {
     return (
         <>
-            <Rekomendasi/>
+            <div className="font-primary">
+                <Rekomendasi/>
+            </div>            
         </>
     );
 };

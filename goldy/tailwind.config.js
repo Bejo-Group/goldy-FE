@@ -28,8 +28,7 @@ module.exports = {
       "b-sm": ["0.75rem", "1.3rem"], // 12px
   },
     fontFamily: {
-      primary: ["Source Sans Pro"],
-      secondary: ["Poppins"],
+      primary: ["Poppins"],
     },
     screens: {
       xm: "350px",

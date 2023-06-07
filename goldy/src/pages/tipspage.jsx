@@ -4,7 +4,7 @@ import Tips from "../components/Tips";
 const Tipspage = () => {
     return (
         <>            
-            <div className='flex flex-col h-screen'>
+            <div className='flex flex-col h-screen font-primary'>
                 <Tips/>
             </div>
         </>

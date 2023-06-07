@@ -5,7 +5,7 @@ function ToGraphLanding () {
     return(   
         <div>
             <div>
-                <p className="font-bold text-h-xl text-center">Grafik Harga</p>
+                <p className="font-bold text-h-xl text-center py-5">Grafik Harga</p>
             </div>
             <div className="flex justify-center p-10">
                 <img 

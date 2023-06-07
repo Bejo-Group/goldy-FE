@@ -4,7 +4,9 @@ import Home from "../components/Home";
 const Homepage = () => {
     return (
         <>
-            <Home/>
+            <div className="font-primary">
+                <Home/>
+            </div>            
         </>
     );
 };

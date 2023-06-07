@@ -13,7 +13,7 @@ function Def() {
         </div>        
         <div>
             <h1 className='font-bold text-[96px]'>Goldy</h1>
-            <h4 className='text-h-md'>Mendeteksi harga emas dan merekomendasikan waktu yang tepat untuk investasi.</h4>
+            <h4 className='text-h-md'>Mendeteksi harga emas dan merekomendasikan pembelian di waktu yang diinginkan</h4>
         </div>
     </div>
   )

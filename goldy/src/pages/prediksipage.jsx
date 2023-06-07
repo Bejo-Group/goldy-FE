@@ -4,7 +4,9 @@ import Prediksi from "../components/Prediksi";
 const Prediksipage = () => {
     return (
         <>
-            <Prediksi/>
+            <div className="font-primary">
+                <Prediksi/>
+            </div>            
         </>
     );
 };
