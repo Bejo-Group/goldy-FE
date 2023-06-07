@@ -18,7 +18,7 @@ function Rekomendasi(){
             toast.error("All field must be filled!");
             console.log("All field must be filled!")
         } else {
-            axios.get("http://vallen.pythonanywhere.com/prediction", {
+            axios.get("https://vallen.pythonanywhere.com/prediction", {
                 params: {
                     date: input_Date,
                 },
