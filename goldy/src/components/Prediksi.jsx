@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
-import DummyGraph from './ToGraphLanding'
+import Chart from './ToGraphLanding'
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import MyCarousel from '../components/MyCarousel';
@@ -39,7 +39,8 @@ function Prediksi() {
   return (
     <>
       <Navbar />
-      <MyCarousel></MyCarousel>
+      <Chart/>
+      {/* <MyCarousel></MyCarousel> */}
       <div className='flex flex-col min-h-screen'>
         <ToastContainer />
         <div className="row flex py-10">
