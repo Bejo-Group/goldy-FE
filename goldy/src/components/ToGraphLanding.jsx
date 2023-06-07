@@ -1,5 +1,5 @@
 import React from "react";
-import DummyGraph from "../assets/DummyGraph.png"
+import DummyGraph from "../assets/DummyGraph.png";
 
 function ToGraphLanding () {
     return(   
@@ -28,7 +28,7 @@ function ToGraphLanding () {
                     <p className="text-gold text-h-md">12 Maret 2023 06:46:21</p>
                 </div>
             </div>
-        </div>  
+        </div> 
     )
 }
 
