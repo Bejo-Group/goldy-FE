@@ -17,7 +17,6 @@ function Home () {
         <Navbar/>
         <div className='min-h-screen'>
             <Def/>
-            <ToGraph/>
             <ToPrediksi/>
             <ToRekomendasi/>
             <ToTips/>
