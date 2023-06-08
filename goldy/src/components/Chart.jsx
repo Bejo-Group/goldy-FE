@@ -10,7 +10,7 @@ function YouTubeEmbed() {
         srcDoc={srcDoc}
         frameBorder="0"
         width="1500"
-        height="320"
+        height="350"
         style={{ border: '0', overflow: 'hidden' }}
       ></iframe>
     </div>

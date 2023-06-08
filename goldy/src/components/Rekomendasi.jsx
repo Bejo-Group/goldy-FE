@@ -41,7 +41,7 @@ function Rekomendasi(){
         <>
             <Navbar/>
             <Chart/>
-            <div className='flex flex-col min-h-screen'>
+            <div className='flex flex-col min-h-[300px]'>
                 <ToastContainer/>
                 <div className="row flex py-10">
                     <div className="column flex-[50%]">
