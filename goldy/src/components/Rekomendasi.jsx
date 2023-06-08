@@ -3,8 +3,9 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Navbar'
 import Footer from './Footer'
-import DummyGraph from './ToGraphLanding'
+import Chart from './ToGraphLanding'
 import { Link } from "react-router-dom";
+import MyCarousel from '../components/MyCarousel';
 
 import { useState } from 'react';
 import axios from 'axios';
@@ -18,7 +19,7 @@ function Rekomendasi(){
             toast.error("All field must be filled!");
             console.log("All field must be filled!")
         } else {
-            axios.get("http://vallen.pythonanywhere.com/prediction", {
+            axios.get("https://vallen.pythonanywhere.com/prediction", {
                 params: {
                     date: input_Date,
                 },
@@ -39,14 +40,14 @@ function Rekomendasi(){
     return(
         <>
             <Navbar/>
-            <div className='flex flex-col min-h-screen'>                 
-                <DummyGraph/>
+            <Chart/>
+            <div className='flex flex-col min-h-screen'>
                 <ToastContainer/>
                 <div className="row flex py-10">
                     <div className="column flex-[50%]">
                         <div className='pl-60'>
                             {/* Date Section */}
-                            <div className='flex mt-10'>
+                            <div className='flex'>
                                 <div className='text-secondary text-h-md pr-5'>Date :</div>   
                                 <input 
                                 className="shadow appearance-none border rounded w-3/5 py-2 px-3 text-darkgray leading-tight focus:outline-none focus:shadow-outline" 
@@ -71,8 +72,9 @@ function Rekomendasi(){
                             </div>
                         </div>
                     </div>
-                    <div className="result column flex-[50%] text-secondary text-h-md">
-                        <label>{prediction}</label>
+                    <div className="result column flex-[50%] text-secondary text-h-md" style={{ display: "grid", placeItems: "center" }}>
+                        <div>Apakah disarankan untuk membeli emas?</div>
+                        <div><strong>{prediction}</strong></div>
                     </div>
                 </div>                  
             </div>

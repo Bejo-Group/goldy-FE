@@ -10,6 +10,7 @@ import ToGraph from './ToGraphLanding'
 import ToPrediksi from './ToPrediksi'
 import ToRekomendasi from './ToRekomendasi'
 import ToTips from './ToTips'
+import Chart from './ToGraphLanding'
 
 function Home () {
     return (
@@ -17,7 +18,7 @@ function Home () {
         <Navbar/>
         <div className='min-h-screen'>
             <Def/>
-            <ToGraph/>
+            <Chart/>
             <ToPrediksi/>
             <ToRekomendasi/>
             <ToTips/>

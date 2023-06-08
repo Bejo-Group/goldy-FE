@@ -11,7 +11,7 @@ function ToPrediksi() {
                 src={Prediksi}
                 alt="Prediksi"
             />
-        </div>        
+        </div>      
         <div>
             <p className='font-bold text-h-xl'>Prediksi</p>
             <p className='text-h-md'>Lakukan prediksi harga emas di waktu yang diinginkan.</p>

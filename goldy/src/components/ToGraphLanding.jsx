@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import DummyGraph from "../assets/DummyGraph.png";
+import Chart from "./Chart";
 
 function ToGraphLanding () {
     const [rates, setRates] = useState([])
